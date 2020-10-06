@@ -29,7 +29,7 @@ export default function App(props) {
                 </Container>
             </Jumbotron>
 
-            <ListaLivros  style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}/>
+            <ListaLivros />
         </div>
     );
 }
