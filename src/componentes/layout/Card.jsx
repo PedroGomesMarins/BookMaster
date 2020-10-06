@@ -20,11 +20,21 @@ export default function Card(props) {
                 <img src={fotos} alt="sdfsdfe" />
                 <div>
                     <span> {alugado ? 'Alugado' : 'Disponivel'}</span>
+                </div>
+                <div>
                     <button onClick={
                         function (e) {
                             setAlugar(true)
                         }
                     }>Alugar
+                    </button>
+                </div>
+                <div>
+                    <button onClick={
+                        function (e) {
+                            setAlugar(false)
+                        }
+                    }>Devolver
                     </button>
                 </div>
             </div>
