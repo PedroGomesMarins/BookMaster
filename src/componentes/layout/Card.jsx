@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Card.css'
+import './Botao.css'
 import fotos from '../../imagens/teste.jpg'
 
 export default function Card(props) {
@@ -14,15 +15,15 @@ export default function Card(props) {
     return (
         <div className="Card" style={cardStyle}>
             <div className="Title" >
-                {props.livroNome}
+                <strong>{props.livroNome}</strong>
             </div>
             <div className="Content" >
                 <img src={fotos} alt="sdfsdfe" />
                 <div>
-                    <span> {alugado ? 'Alugado' : 'Disponivel'}</span>
+                    <span> {alugado ? 'Alugado' : 'Disponível'}</span>
                 </div>
                 <div>
-                    <button onClick={
+                    <button class="myButton" onClick={
                         function (e) {
                             setAlugar(true)
                         }
@@ -30,7 +31,7 @@ export default function Card(props) {
                     </button>
                 </div>
                 <div>
-                    <button onClick={
+                    <button class="myButton" onClick={
                         function (e) {
                             setAlugar(false)
                         }
