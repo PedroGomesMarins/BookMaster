@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Card.css'
 import fotos from '../../imagens/teste.jpg'
 
@@ -9,15 +9,23 @@ export default function Card(props) {
         borderColor: '#000000',
     }
 
+    const [alugado, setAlugar] = useState(false)
+
     return (
         <div className="Card" style={cardStyle}>
             <div className="Title" >
                 {props.livroNome}
             </div>
             <div className="Content" >
-                <img src={fotos}  alt="sdfsdfe"/>
+                <img src={fotos} alt="sdfsdfe" />
                 <div>
-                    as
+                    <span> {alugado ? 'Alugado' : 'Disponivel'}</span>
+                    <button onClick={
+                        function (e) {
+                            setAlugar(true)
+                        }
+                    }>Alugar
+                    </button>
                 </div>
             </div>
         </div>
