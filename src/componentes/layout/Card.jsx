@@ -11,14 +11,14 @@ export default function Card(props) {
     }
 
     const [alugado, setAlugar] = useState(false)
-    
+
     return (
         <div className="Card" style={cardStyle}>
             <div className="Title" >
                 <strong>{props.livroNome}</strong>
             </div>
             <div className="Content" >
-                <img src={fotos} alt="Erro!" />
+                <img src={require("../../imagens/foto2.jpg")} alt="Erro!" />
                 <div>
                     <span> {alugado ? 'Alugado' : 'Disponível'}</span>
                 </div>
