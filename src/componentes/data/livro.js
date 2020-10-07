@@ -1,5 +1,5 @@
 export default[
-    { id: 1, nome:'Quadrinho', preco: './imagens/teste.jpg'},
+    { id: 1, nome:'Quadrinho', preco: "../../imagens/foto1.jpg"},
     { id: 2, nome:'Mesa', preco: 6.2},
     { id: 3, nome:'Caneta', preco: 3.6},
     { id: 4, nome:'Lápis', preco: 3.9},
